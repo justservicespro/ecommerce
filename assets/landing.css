@@ -1,0 +1,167 @@
+/* ===== Landing Page: "Storefront Directory" — printed catalog aesthetic ===== */
+:root {
+  --paper: #faf7f0;
+  --ink: #1f1d1a;
+  --rule: #d8d2c4;
+  --stamp-fashion: #b5495b;
+  --stamp-electronics: #2f5d62;
+  --stamp-grocery: #6a8d3a;
+  --stamp-books: #8a5a2e;
+  --stamp-furniture: #5b4a8a;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: 'Courier Prime', 'Courier New', monospace;
+  background: var(--paper);
+  color: var(--ink);
+  background-image:
+    repeating-linear-gradient(0deg, transparent, transparent 39px, rgba(0,0,0,0.015) 40px);
+}
+
+header.directory-header {
+  padding: 4rem 2rem 2rem;
+  text-align: center;
+  border-bottom: 3px double var(--ink);
+}
+
+.eyebrow {
+  font-size: 0.75rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: #8a8275;
+}
+
+h1.title {
+  font-family: 'Times New Roman', Georgia, serif;
+  font-size: clamp(2.5rem, 8vw, 5rem);
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  margin: 0.4rem 0;
+}
+
+.issue-line {
+  font-size: 0.85rem;
+  color: #6b6458;
+  margin-top: 0.5rem;
+}
+
+main.catalog {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 6rem;
+}
+
+.catalog-intro {
+  font-family: 'Times New Roman', Georgia, serif;
+  font-size: 1.15rem;
+  line-height: 1.7;
+  max-width: 640px;
+  margin: 0 auto 3rem;
+  text-align: center;
+  color: #3a362f;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2px;
+  border: 2px solid var(--ink);
+}
+
+.card {
+  position: relative;
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  padding: 2rem 1.5rem;
+  text-decoration: none;
+  color: var(--ink);
+  display: flex;
+  flex-direction: column;
+  min-height: 280px;
+  transition: background 0.2s ease;
+  overflow: hidden;
+}
+
+.card:hover {
+  background: #f2ecdf;
+}
+
+.card .plate-number {
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  color: #9a9286;
+  margin-bottom: 1rem;
+}
+
+.card h2 {
+  font-family: 'Times New Roman', Georgia, serif;
+  font-size: 1.8rem;
+  margin: 0 0 0.5rem;
+  line-height: 1.15;
+}
+
+.card p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #5a5448;
+  flex-grow: 1;
+}
+
+.card .stamp {
+  align-self: flex-start;
+  margin-top: 1.5rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding: 0.4rem 0.9rem;
+  border: 1.5px solid currentColor;
+  border-radius: 2px;
+  transform: rotate(-2deg);
+  position: relative;
+}
+
+.card .stamp::after {
+  content: '→';
+  margin-left: 0.6rem;
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.card:hover .stamp::after {
+  transform: translateX(4px);
+}
+
+.card.fashion .stamp { color: var(--stamp-fashion); }
+.card.electronics .stamp { color: var(--stamp-electronics); }
+.card.grocery .stamp { color: var(--stamp-grocery); }
+.card.books .stamp { color: var(--stamp-books); }
+.card.furniture .stamp { color: var(--stamp-furniture); }
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 6px;
+}
+
+.card.fashion::before { background: var(--stamp-fashion); }
+.card.electronics::before { background: var(--stamp-electronics); }
+.card.grocery::before { background: var(--stamp-grocery); }
+.card.books::before { background: var(--stamp-books); }
+.card.furniture::before { background: var(--stamp-furniture); }
+
+footer.directory-footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.75rem;
+  color: #9a9286;
+  border-top: 3px double var(--ink);
+}
+
+@media (max-width: 480px) {
+  h1.title { font-size: 2.2rem; }
+  .grid { grid-template-columns: 1fr; }
+}
