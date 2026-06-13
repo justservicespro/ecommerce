@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Marginalia Books — Demo Shop</title>
+<link rel="stylesheet" href="../assets/shared.css" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body data-store="books">
+  <nav class="shop-nav">
+    <a href="../index.html" class="back-link">← All shops</a>
+    <span class="brand">Marginalia Books</span>
+    <a href="cart.html" class="cart-link">Cart (<span class="cart-count">0</span>)</a>
+  </nav>
+
+  <header class="hero">
+    <h1>Read slowly</h1>
+    <p>New releases, staff favorites, and quiet corners for getting lost in a good book.</p>
+  </header>
+
+  <main class="product-grid">
+    <div class="product-card">
+      <div class="product-image" style="background-image:url('https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400&q=80')"></div>
+      <div class="product-name">The Quiet Coast</div>
+      <div class="product-meta">A novel · Hardcover</div>
+      <div class="shelf-note">"Stayed with me for weeks." — staff pick</div>
+      <div class="product-price">$24.00</div>
+      <button class="add-btn" data-add-to-cart
+        data-id="b1" data-name="The Quiet Coast" data-price="24.00"
+        data-image="https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=200&q=80">Add to cart</button>
+    </div>
+
+    <div class="product-card">
+      <div class="product-image" style="background-image:url('https://images.unsplash.com/photo-1532012197267-da84d127e765?w=400&q=80')"></div>
+      <div class="product-name">Field Notes on Rivers</div>
+      <div class="product-meta">Essays · Paperback</div>
+      <div class="shelf-note">Perfect for slow mornings.</div>
+      <div class="product-price">$16.50</div>
+      <button class="add-btn" data-add-to-cart
+        data-id="b2" data-name="Field Notes on Rivers" data-price="16.50"
+        data-image="https://images.unsplash.com/photo-1532012197267-da84d127e765?w=200&q=80">Add to cart</button>
+    </div>
+
+    <div class="product-card">
+      <div class="product-image" style="background-image:url('https://images.unsplash.com/photo-1495446815901-a7297e633e8d?w=400&q=80')"></div>
+      <div class="product-name">A History of Small Towns</div>
+      <div class="product-meta">Nonfiction · Hardcover</div>
+      <div class="shelf-note">Surprisingly funny.</div>
+      <div class="product-price">$28.00</div>
+      <button class="add-btn" data-add-to-cart
+        data-id="b3" data-name="A History of Small Towns" data-price="28.00"
+        data-image="https://images.unsplash.com/photo-1495446815901-a7297e633e8d?w=200&q=80">Add to cart</button>
+    </div>
+
+    <div class="product-card">
+      <div class="product-image" style="background-image:url('https://images.unsplash.com/photo-1589998059171-988d887df646?w=400&q=80')"></div>
+      <div class="product-name">Midnight Garden</div>
+      <div class="product-meta">Poetry · Paperback</div>
+      <div class="shelf-note">Read one a night.</div>
+      <div class="product-price">$14.00</div>
+      <button class="add-btn" data-add-to-cart
+        data-id="b4" data-name="Midnight Garden" data-price="14.00"
+        data-image="https://images.unsplash.com/photo-1589998059171-988d887df646?w=200&q=80">Add to cart</button>
+    </div>
+
+    <div class="product-card">
+      <div class="product-image" style="background-image:url('https://images.unsplash.com/photo-1512820790803-83ca734da794?w=400&q=80')"></div>
+      <div class="product-name">The Cartographer's Apprentice</div>
+      <div class="product-meta">Fiction · Hardcover</div>
+      <div class="shelf-note">Our bestseller this season.</div>
+      <div class="product-price">$26.00</div>
+      <button class="add-btn" data-add-to-cart
+        data-id="b5" data-name="The Cartographer's Apprentice" data-price="26.00"
+        data-image="https://images.unsplash.com/photo-1512820790803-83ca734da794?w=200&q=80">Add to cart</button>
+    </div>
+
+    <div class="product-card">
+      <div class="product-image" style="background-image:url('https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=400&q=80')"></div>
+      <div class="product-name">Letters to No One</div>
+      <div class="product-meta">Memoir · Paperback</div>
+      <div class="shelf-note">Bring tissues.</div>
+      <div class="product-price">$18.00</div>
+      <button class="add-btn" data-add-to-cart
+        data-id="b6" data-name="Letters to No One" data-price="18.00"
+        data-image="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=200&q=80">Add to cart</button>
+    </div>
+  </main>
+
+  <script src="../assets/cart.js"></script>
+</body>
+</html>

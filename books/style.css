@@ -1,0 +1,124 @@
+:root {
+  --paper: #f3ece0;
+  --ink: #3a2e25;
+  --rule: #ddccb8;
+  --accent: #8a5a2e;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', serif;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.shop-nav {
+  border-bottom: 1px solid var(--rule);
+  position: sticky;
+  top: 0;
+  background: var(--paper);
+  z-index: 100;
+}
+
+.brand {
+  font-size: 1.4rem;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.cart-count {
+  background: var(--accent);
+  color: #fff;
+}
+
+.hero {
+  padding: 4rem 2rem 2.5rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: clamp(2.2rem, 6vw, 4rem);
+  margin: 0 0 0.6rem;
+  font-style: italic;
+}
+
+.hero p {
+  max-width: 480px;
+  margin: 0 auto;
+  color: #6e5d4e;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 0.95rem;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem 5rem;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-image {
+  aspect-ratio: 2/3;
+  border-radius: 4px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 0.9rem;
+  box-shadow: 0 8px 20px rgba(58,46,37,0.15);
+}
+
+.product-name {
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+
+.product-meta {
+  font-size: 0.85rem;
+  font-style: italic;
+  color: #8a7763;
+  margin-bottom: 0.6rem;
+}
+
+.shelf-note {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 0.8rem;
+  color: #6e5d4e;
+  background: #fff;
+  border-left: 3px solid var(--accent);
+  padding: 0.5rem 0.7rem;
+  margin-bottom: 0.8rem;
+  border-radius: 0 4px 4px 0;
+}
+
+.product-price {
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.add-btn {
+  border: none;
+  background: var(--accent);
+  color: #fff;
+  padding: 0.65rem 1rem;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  cursor: pointer;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  transition: background 0.2s;
+}
+
+.add-btn:hover { background: #6e4523; }
+
+.modal-close { background: var(--accent); color: #fff; }
+.checkout-form, .cart-row-name, .cart-row-price, .cart-row-subtotal,
+.checkout-form label, .modal-box h2, .modal-box p { font-family: 'Helvetica Neue', Arial, sans-serif; }
