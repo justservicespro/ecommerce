@@ -1,0 +1,117 @@
+:root {
+  --paper: #ece7e1;
+  --ink: #2c2a28;
+  --rule: #d4cdc4;
+  --accent: #5b4a8a;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.shop-nav {
+  border-bottom: 1px solid var(--rule);
+  position: sticky;
+  top: 0;
+  background: var(--paper);
+  z-index: 100;
+}
+
+.brand {
+  font-size: 1.4rem;
+  font-weight: 300;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.cart-count {
+  background: var(--accent);
+  color: #fff;
+}
+
+.hero {
+  padding: 5rem 2rem 3rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: clamp(2.2rem, 6vw, 4rem);
+  font-weight: 300;
+  letter-spacing: -0.01em;
+  margin: 0 0 0.75rem;
+}
+
+.hero p {
+  max-width: 460px;
+  margin: 0 auto;
+  color: #80766c;
+  font-size: 1.05rem;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 3rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem 5rem;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-image {
+  aspect-ratio: 4/3;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 1rem;
+  background-color: #ddd6cd;
+}
+
+.product-name {
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+  letter-spacing: 0.02em;
+}
+
+.product-meta {
+  font-size: 0.85rem;
+  color: #9a9089;
+  margin-bottom: 0.8rem;
+}
+
+.product-price {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.add-btn {
+  border: 1px solid var(--ink);
+  background: transparent;
+  color: var(--ink);
+  padding: 0.7rem 1.4rem;
+  font-weight: 500;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  align-self: flex-start;
+  transition: background 0.2s, color 0.2s;
+}
+
+.add-btn:hover {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.modal-close {
+  background: var(--accent);
+  color: #fff;
+}
