@@ -1,0 +1,142 @@
+:root {
+  --paper: #0f1416;
+  --ink: #e8ecee;
+  --rule: #2a3236;
+  --accent: #5fd0c5;
+  --muted: #8a9499;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.shop-nav {
+  border-bottom: 1px solid var(--rule);
+  position: sticky;
+  top: 0;
+  background: var(--paper);
+  z-index: 100;
+}
+
+.brand {
+  font-family: 'Courier New', monospace;
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+.brand::before { content: '> '; color: var(--accent); }
+
+.cart-count {
+  background: var(--accent);
+  color: #0f1416;
+}
+
+.hero {
+  padding: 4rem 2rem 3rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+.hero-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: clamp(2.2rem, 6vw, 4rem);
+  margin: 0 0 0.75rem;
+  letter-spacing: -0.01em;
+}
+
+.hero p {
+  max-width: 480px;
+  color: var(--muted);
+  font-size: 1.05rem;
+  font-family: 'Courier New', monospace;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--rule);
+  padding: 1.5rem;
+}
+
+.product-image {
+  aspect-ratio: 4/3;
+  border-radius: 4px;
+  background-size: cover;
+  background-position: center;
+  background-color: #1a2226;
+  margin-bottom: 1rem;
+}
+
+.product-name {
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.product-meta {
+  font-size: 0.8rem;
+  color: var(--muted);
+  font-family: 'Courier New', monospace;
+  margin-bottom: 0.8rem;
+  line-height: 1.5;
+}
+
+.product-price {
+  font-weight: 700;
+  font-family: 'Courier New', monospace;
+  color: var(--accent);
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+}
+
+.add-btn {
+  border: 1px solid var(--accent);
+  background: transparent;
+  color: var(--accent);
+  padding: 0.65rem 1rem;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  cursor: pointer;
+  font-family: 'Courier New', monospace;
+  transition: background 0.2s, color 0.2s;
+}
+
+.add-btn:hover {
+  background: var(--accent);
+  color: #0f1416;
+}
+
+/* cart page overrides for dark theme */
+.cart-page { color: var(--ink); }
+.cart-row { border-bottom: 1px solid var(--rule); }
+.cart-row-img { background: #1a2226; }
+.cart-row-price { color: var(--muted); }
+.qty-btn { border-color: var(--rule); color: var(--ink); background: transparent; }
+.qty-btn:hover { background: rgba(255,255,255,0.06); }
+#cart-empty { color: var(--muted); }
+#cart-empty a { color: var(--accent); }
+.checkout-form input { background: #1a2226; border-color: var(--rule); color: var(--ink); }
+.checkout-form label { color: var(--ink); }
+.modal-box { background: #1a2226; color: var(--ink); }
+.modal-box p { color: var(--muted); }
+.modal-close {
+  background: var(--accent);
+  color: #0f1416;
+}
