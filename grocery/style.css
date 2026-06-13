@@ -1,0 +1,124 @@
+:root {
+  --paper: #fbfaf5;
+  --ink: #2e3a23;
+  --rule: #dde3cc;
+  --accent: #6a8d3a;
+  --accent2: #e0a458;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.shop-nav {
+  border-bottom: 3px solid var(--ink);
+  position: sticky;
+  top: 0;
+  background: var(--paper);
+  z-index: 100;
+}
+
+.brand {
+  font-family: Georgia, serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.brand::after { content: ' 🌿'; }
+
+.cart-count {
+  background: var(--accent);
+  color: #fff;
+}
+
+.hero {
+  padding: 3rem 2rem 2rem;
+  text-align: center;
+  border-bottom: 2px dashed var(--rule);
+}
+
+.hero h1 {
+  font-family: Georgia, serif;
+  font-size: clamp(2.2rem, 6vw, 4rem);
+  margin: 0 0 0.5rem;
+}
+
+.hero p {
+  max-width: 480px;
+  margin: 0 auto;
+  color: #5d6b4a;
+}
+
+.section-label {
+  max-width: 1200px;
+  margin: 2rem auto 0.5rem;
+  padding: 0 2rem;
+  font-family: Georgia, serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  border-bottom: 2px solid var(--accent);
+  display: inline-block;
+}
+
+.section-wrap { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem 0 3rem;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border: 1px solid var(--rule);
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.product-image {
+  aspect-ratio: 1;
+  border-radius: 8px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 0.8rem;
+}
+
+.product-name {
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+
+.product-meta {
+  font-size: 0.8rem;
+  color: #8a9479;
+  margin-bottom: 0.6rem;
+}
+
+.product-price {
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 0.8rem;
+}
+
+.add-btn {
+  border: none;
+  background: var(--accent);
+  color: #fff;
+  padding: 0.65rem 1rem;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.add-btn:hover { background: #587530; }
+
+.modal-close { background: var(--accent); color: #fff; }

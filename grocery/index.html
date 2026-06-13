@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Greenleaf Market — Demo Shop</title>
+<link rel="stylesheet" href="../assets/shared.css" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body data-store="grocery">
+  <nav class="shop-nav">
+    <a href="../index.html" class="back-link">← All shops</a>
+    <span class="brand">Greenleaf Market</span>
+    <a href="cart.html" class="cart-link">Cart (<span class="cart-count">0</span>)</a>
+  </nav>
+
+  <header class="hero">
+    <h1>Fresh today</h1>
+    <p>Seasonal produce, pantry staples, and weekly essentials from local growers.</p>
+  </header>
+
+  <div class="section-wrap">
+    <div class="section-label">Produce</div>
+  </div>
+  <main class="product-grid section-wrap">
+    <div class="product-card">
+      <div class="product-image" style="background-image:url('https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?w=400&q=80')"></div>
+      <div class="product-name">Organic Avocados (3)</div>
+      <div class="product-meta">Hass · Ripe &amp; ready</div>
+      <div class="product-price">$4.50</div>
+      <button class="add-btn" data-add-to-cart
+        data-id="g1" data-name="Organic Avocados (3)" data-price="4.50"
+        data-image="https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?w=200&q=80">Add to cart</button>
+    </div>
+
+    <div class="product-card">
+      <div class="product-image" style="background-image:url('https://images.unsplash.com/photo-1546470427-e26264be0b0d?w=400&q=80')"></div>
+      <div class="product-name">Heirloom Tomatoes, 1lb</div>
+      <div class="product-meta">Local farm</div>
+      <div class="product-price">$3.80</div>
+      <button class="add-btn" data-add-to-cart
+        data-id="g2" data-name="Heirloom Tomatoes, 1lb" data-price="3.80"
+        data-image="https://images.unsplash.com/photo-1546470427-e26264be0b0d?w=200&q=80">Add to cart</button>
+    </div>
+
+    <div class="product-card">
+      <div class="product-image" style="background-image:url('https://images.unsplash.com/photo-1610832958506-aa56368176cf?w=400&q=80')"></div>
+      <div class="product-name">Baby Spinach, 5oz</div>
+      <div class="product-meta">Triple washed</div>
+      <div class="product-price">$3.20</div>
+      <button class="add-btn" data-add-to-cart
+        data-id="g3" data-name="Baby Spinach, 5oz" data-price="3.20"
+        data-image="https://images.unsplash.com/photo-1610832958506-aa56368176cf?w=200&q=80">Add to cart</button>
+    </div>
+  </main>
+
+  <div class="section-wrap">
+    <div class="section-label">Pantry</div>
+  </div>
+  <main class="product-grid section-wrap">
+    <div class="product-card">
+      <div class="product-image" style="background-image:url('https://images.unsplash.com/photo-1509440159596-0249088772ff?w=400&q=80')"></div>
+      <div class="product-name">Sourdough Loaf</div>
+      <div class="product-meta">Baked daily</div>
+      <div class="product-price">$6.00</div>
+      <button class="add-btn" data-add-to-cart
+        data-id="g4" data-name="Sourdough Loaf" data-price="6.00"
+        data-image="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=200&q=80">Add to cart</button>
+    </div>
+
+    <div class="product-card">
+      <div class="product-image" style="background-image:url('https://images.unsplash.com/photo-1606923829579-0cb981942447?w=400&q=80')"></div>
+      <div class="product-name">Extra Virgin Olive Oil, 500ml</div>
+      <div class="product-meta">Cold pressed</div>
+      <div class="product-price">$12.50</div>
+      <button class="add-btn" data-add-to-cart
+        data-id="g5" data-name="Extra Virgin Olive Oil, 500ml" data-price="12.50"
+        data-image="https://images.unsplash.com/photo-1606923829579-0cb981942447?w=200&q=80">Add to cart</button>
+    </div>
+
+    <div class="product-card">
+      <div class="product-image" style="background-image:url('https://images.unsplash.com/photo-1587049332298-1c42e83937a7?w=400&q=80')"></div>
+      <div class="product-name">Free-Range Eggs, dozen</div>
+      <div class="product-meta">Pasture raised</div>
+      <div class="product-price">$5.40</div>
+      <button class="add-btn" data-add-to-cart
+        data-id="g6" data-name="Free-Range Eggs, dozen" data-price="5.40"
+        data-image="https://images.unsplash.com/photo-1587049332298-1c42e83937a7?w=200&q=80">Add to cart</button>
+    </div>
+  </main>
+
+  <script src="../assets/cart.js"></script>
+</body>
+</html>
