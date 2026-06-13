@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Cart — Circuit & Sound</title>
+<link rel="stylesheet" href="../assets/shared.css" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body data-store="electronics">
+  <nav class="shop-nav">
+    <a href="index.html" class="back-link">← Continue shopping</a>
+    <span class="brand">Circuit &amp; Sound</span>
+    <a href="cart.html" class="cart-link">Cart (<span class="cart-count">0</span>)</a>
+  </nav>
+
+  <main class="cart-page">
+    <h1>// Cart</h1>
+
+    <div id="cart-empty">Cart is empty. <a href="index.html">Browse products →</a></div>
+    <div id="cart-items"></div>
+
+    <div class="cart-summary">
+      <span>Total</span>
+      <span id="cart-total">$0.00</span>
+    </div>
+
+    <form id="checkout-form" class="checkout-form">
+      <label>Full name
+        <input type="text" required placeholder="Jordan Smith" />
+      </label>
+      <label>Email
+        <input type="email" required placeholder="you@example.com" />
+      </label>
+      <label>Shipping address
+        <input type="text" required placeholder="123 Market Street, City" />
+      </label>
+      <div class="checkout-row">
+        <label>Card number
+          <input type="text" required placeholder="4242 4242 4242 4242" />
+        </label>
+        <label>Expiry
+          <input type="text" required placeholder="MM/YY" />
+        </label>
+      </div>
+      <button type="submit" id="checkout-btn" class="add-btn" style="margin-top:0.5rem;">Place order</button>
+    </form>
+  </main>
+
+  <div class="modal-overlay" id="order-modal">
+    <div class="modal-box">
+      <svg class="check-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="11" stroke="#5fd0c5" stroke-width="2"/>
+        <path d="M7 12.5L10.5 16L17 8.5" stroke="#5fd0c5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <h2>Order placed</h2>
+      <p>Confirmation <span class="order-number"></span></p>
+      <p style="font-size:0.85rem;">This is a demo — no payment was processed.</p>
+      <button class="modal-close">Back to shop</button>
+    </div>
+  </div>
+
+  <script src="../assets/cart.js"></script>
+</body>
+</html>
