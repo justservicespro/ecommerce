@@ -8,6 +8,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/landing.css" />
+<link rel="stylesheet" href="assets/cta.css" />
 </head>
 <body data-store="directory">
 
@@ -20,31 +21,39 @@
       <li class="has-dropdown" id="shops-dropdown">
         <a href="#shops" id="shops-trigger">Templates <span class="caret"></span></a>
         <div class="dropdown">
-          <a href="fashion/index.html">
-            <span class="dd-sub">Worn &amp; Found</span>
-            <span class="dd-tag">Fashion store</span>
-          </a>
-          <a href="electronics/index.html">
-            <span class="dd-sub">Circuit &amp; Sound</span>
-            <span class="dd-tag">Electronics store</span>
-          </a>
           <a href="grocery/index.html">
             <span class="dd-sub">Greenleaf Market</span>
-            <span class="dd-tag">Grocery store</span>
+            <span class="dd-tag">Grocery &amp; food delivery</span>
           </a>
-          <a href="books/index.html">
-            <span class="dd-sub">Marginalia Books</span>
-            <span class="dd-tag">Bookstore</span>
+          <a href="fashion/index.html">
+            <span class="dd-sub">NaijaThreads</span>
+            <span class="dd-tag">Fashion &amp; apparel</span>
           </a>
-          <a href="furniture/index.html">
-            <span class="dd-sub">Hearth &amp; Frame</span>
-            <span class="dd-tag">Furniture store</span>
+          <a href="electronics/index.html">
+            <span class="dd-sub">TechBay</span>
+            <span class="dd-tag">Electronics &amp; mobile</span>
+          </a>
+          <a href="beauty/index.html">
+            <span class="dd-sub">GlowHouse</span>
+            <span class="dd-tag">Beauty &amp; personal care</span>
+          </a>
+          <a href="pharmacy/index.html">
+            <span class="dd-sub">WellCare Pharmacy</span>
+            <span class="dd-tag">Pharmacy &amp; health</span>
+          </a>
+          <a href="b2b/index.html">
+            <span class="dd-sub">SupplyHub</span>
+            <span class="dd-tag">B2B supply</span>
+          </a>
+          <a href="music/index.html">
+            <span class="dd-sub">SoundWave</span>
+            <span class="dd-tag">Music streaming</span>
           </a>
         </div>
       </li>
       <li><a href="#about">About</a></li>
       <li><a href="#testimonials">Reviews</a></li>
-      <li><a href="#newsletter" class="nav-cta">Get a quote</a></li>
+      <li><a href="https://wa.me/2348079926755" target="_blank" rel="noopener" class="nav-cta">Get a quote</a></li>
     </ul>
   </nav>
 
@@ -52,73 +61,162 @@
     <div class="hero-inner">
       <span class="eyebrow">Studio Atelier — Lagos, Nigeria</span>
       <h1>See your online store before it's built.</h1>
-      <p>We design and build online stores for Nigerian businesses. Below are five working demo templates — open any one to browse products, add to cart, and try checkout, exactly as your customers would.</p>
+      <p>We design and build online stores for Nigerian businesses. Below are seven working demo templates across grocery, fashion, electronics, beauty, pharmacy, B2B supply, and music — open any one to browse products, add to cart, and try checkout, exactly as your customers would.</p>
       <a href="#shops" class="hero-cta">View the templates <span class="arrow">→</span></a>
     </div>
   </header>
 
   <div class="section-head" id="shops">
     <h2>Our Templates</h2>
-    <span class="section-note">Five fully interactive store designs. Click any template to preview it as a live, working website.</span>
+    <span class="section-note">Seven fully interactive store designs across different industries. Click any template to view it as a live, working demo website.</span>
   </div>
 
   <section class="shop-grid">
-    <a href="fashion/index.html" class="shop-card">
-      <div class="shop-card-img" style="background-image:url('https://images.unsplash.com/photo-1572816225927-d08fb138f2b2?w=600&q=80')"></div>
+    <a href="grocery/index.html" class="shop-card">
+      <div class="shop-card-preview">
+        <div class="preview-chrome">
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          <span class="url-bar">greenleafmarket.demo</span>
+        </div>
+        <div class="preview-frame-wrap">
+          <iframe src="grocery/index.html" tabindex="-1" loading="lazy"></iframe>
+          <div class="preview-overlay"></div>
+        </div>
+      </div>
       <div class="shop-card-body">
-        <span class="shop-card-plate">Template 01 — Fashion</span>
-        <h3>Worn &amp; Found</h3>
-        <p>A clothing store layout — denim, knits, and everyday wear, with cart and checkout fully working.</p>
-        <span class="shop-card-enter">Preview template <span class="arrow">→</span></span>
+        <span class="shop-card-plate">Template 01 — Grocery &amp; Food Delivery</span>
+        <h3>Greenleaf Market</h3>
+        <p>Online grocery &amp; food delivery — fresh produce, staples, drinks and snacks, with delivery to Lagos, Abuja &amp; Port Harcourt.</p>
+        <span class="shop-card-enter">View demo website <span class="arrow">→</span></span>
+      </div>
+    </a>
+
+    <a href="fashion/index.html" class="shop-card">
+      <div class="shop-card-preview">
+        <div class="preview-chrome">
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          <span class="url-bar">naijathreads.demo</span>
+        </div>
+        <div class="preview-frame-wrap">
+          <iframe src="fashion/index.html" tabindex="-1" loading="lazy"></iframe>
+          <div class="preview-overlay"></div>
+        </div>
+      </div>
+      <div class="shop-card-body">
+        <span class="shop-card-plate">Template 02 — Fashion &amp; Apparel</span>
+        <h3>NaijaThreads</h3>
+        <p>A bold streetwear-style clothing store — local fashion brands, men's &amp; women's wear, with nationwide delivery.</p>
+        <span class="shop-card-enter">View demo website <span class="arrow">→</span></span>
       </div>
     </a>
 
     <a href="electronics/index.html" class="shop-card">
-      <div class="shop-card-img" style="background-image:url('https://images.unsplash.com/photo-1648023199223-25d3622bcb13?w=600&q=80')"></div>
+      <div class="shop-card-preview">
+        <div class="preview-chrome">
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          <span class="url-bar">techbay.demo</span>
+        </div>
+        <div class="preview-frame-wrap">
+          <iframe src="electronics/index.html" tabindex="-1" loading="lazy"></iframe>
+          <div class="preview-overlay"></div>
+        </div>
+      </div>
       <div class="shop-card-body">
-        <span class="shop-card-plate">Template 02 — Electronics</span>
-        <h3>Circuit &amp; Sound</h3>
-        <p>A gadget and electronics store layout — audio gear, phones, and accessories, spec-sheet style.</p>
-        <span class="shop-card-enter">Preview template <span class="arrow">→</span></span>
+        <span class="shop-card-plate">Template 03 — Electronics &amp; Mobile Devices</span>
+        <h3>TechBay</h3>
+        <p>Phones, laptops, audio gear and accessories with spec-sheet style listings, warranty badges and pay-on-delivery.</p>
+        <span class="shop-card-enter">View demo website <span class="arrow">→</span></span>
       </div>
     </a>
 
-    <a href="grocery/index.html" class="shop-card">
-      <div class="shop-card-img" style="background-image:url('https://images.unsplash.com/photo-1573662766191-066ba9570a4b?w=600&q=80')"></div>
+    <a href="beauty/index.html" class="shop-card">
+      <div class="shop-card-preview">
+        <div class="preview-chrome">
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          <span class="url-bar">glowhouse.demo</span>
+        </div>
+        <div class="preview-frame-wrap">
+          <iframe src="beauty/index.html" tabindex="-1" loading="lazy"></iframe>
+          <div class="preview-overlay"></div>
+        </div>
+      </div>
       <div class="shop-card-body">
-        <span class="shop-card-plate">Template 03 — Grocery</span>
-        <h3>Greenleaf Market</h3>
-        <p>A grocery and supermarket layout — fresh produce, pantry items, and weekly essentials.</p>
-        <span class="shop-card-enter">Preview template <span class="arrow">→</span></span>
+        <span class="shop-card-plate">Template 04 — Beauty &amp; Personal Care</span>
+        <h3>GlowHouse</h3>
+        <p>Skincare, haircare, makeup and fragrance for him and her — soft, editorial design with same-day Lagos delivery.</p>
+        <span class="shop-card-enter">View demo website <span class="arrow">→</span></span>
       </div>
     </a>
 
-    <a href="books/index.html" class="shop-card">
-      <div class="shop-card-img" style="background-image:url('https://images.unsplash.com/photo-1618828665347-d870c38c95c7?w=600&q=80')"></div>
+    <a href="pharmacy/index.html" class="shop-card">
+      <div class="shop-card-preview">
+        <div class="preview-chrome">
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          <span class="url-bar">wellcarepharmacy.demo</span>
+        </div>
+        <div class="preview-frame-wrap">
+          <iframe src="pharmacy/index.html" tabindex="-1" loading="lazy"></iframe>
+          <div class="preview-overlay"></div>
+        </div>
+      </div>
       <div class="shop-card-body">
-        <span class="shop-card-plate">Template 04 — Books</span>
-        <h3>Marginalia Books</h3>
-        <p>A bookstore layout — new releases, staff picks, and a calm reading-room feel.</p>
-        <span class="shop-card-enter">Preview template <span class="arrow">→</span></span>
+        <span class="shop-card-plate">Template 05 — Pharmacy &amp; Health</span>
+        <h3>WellCare Pharmacy</h3>
+        <p>OTC medicines, vitamins and health devices — clean, clinical design with NAFDAC and pharmacist-verified badges.</p>
+        <span class="shop-card-enter">View demo website <span class="arrow">→</span></span>
       </div>
     </a>
 
-    <a href="furniture/index.html" class="shop-card">
-      <div class="shop-card-img" style="background-image:url('https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&q=80')"></div>
+    <a href="b2b/index.html" class="shop-card">
+      <div class="shop-card-preview">
+        <div class="preview-chrome">
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          <span class="url-bar">supplyhub.demo</span>
+        </div>
+        <div class="preview-frame-wrap">
+          <iframe src="b2b/index.html" tabindex="-1" loading="lazy"></iframe>
+          <div class="preview-overlay"></div>
+        </div>
+      </div>
       <div class="shop-card-body">
-        <span class="shop-card-plate">Template 05 — Furniture</span>
-        <h3>Hearth &amp; Frame</h3>
-        <p>A premium furniture store layout — solid wood pieces presented in a dark, gallery-style design.</p>
-        <span class="shop-card-enter">Preview template <span class="arrow">→</span></span>
+        <span class="shop-card-plate">Template 06 — B2B Supply</span>
+        <h3>SupplyHub</h3>
+        <p>Wholesale ordering for office, restaurant, packaging and industrial supplies — bulk pricing and MOQ tags for businesses.</p>
+        <span class="shop-card-enter">View demo website <span class="arrow">→</span></span>
       </div>
     </a>
 
-    <a href="#newsletter" class="shop-card">
-      <div class="shop-card-img" style="background-image:url('https://images.unsplash.com/photo-1549383433-0d8ef3f38afa?w=600&q=80')"></div>
+    <a href="music/index.html" class="shop-card">
+      <div class="shop-card-preview">
+        <div class="preview-chrome">
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          <span class="url-bar">soundwave.demo</span>
+        </div>
+        <div class="preview-frame-wrap">
+          <iframe src="music/index.html" tabindex="-1" loading="lazy"></iframe>
+          <div class="preview-overlay"></div>
+        </div>
+      </div>
       <div class="shop-card-body">
-        <span class="shop-card-plate">Template 06 — Coming Soon</span>
+        <span class="shop-card-plate">Template 07 — Music Streaming &amp; Downloads</span>
+        <h3>SoundWave</h3>
+        <p>Sell tracks, albums and playlist bundles — dark, vibrant streaming-platform design with a built-in player bar.</p>
+        <span class="shop-card-enter">View demo website <span class="arrow">→</span></span>
+      </div>
+    </a>
+
+    <a href="https://wa.me/2348079926755" target="_blank" rel="noopener" class="shop-card">
+      <div class="shop-card-preview" style="display:flex; align-items:center; justify-content:center; background: var(--bg-elevated);">
+        <div class="preview-chrome" style="position:absolute; top:0; left:0; right:0;">
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          <span class="url-bar">yourbusiness.demo</span>
+        </div>
+        <span style="font-family:'Cormorant Garamond',Georgia,serif; font-style:italic; font-size:2.4rem; color:var(--clay); text-align:center; padding:0 2rem;">Your store here</span>
+      </div>
+      <div class="shop-card-body">
+        <span class="shop-card-plate">Template 08 — Custom Build</span>
         <h3>Your Business</h3>
-        <p>Want a store built in any of these styles for your business? Get in touch and we'll put one together.</p>
+        <p>Want a store built in any of these styles for your business? Message us on WhatsApp and we'll put one together.</p>
         <span class="shop-card-enter">Get a quote <span class="arrow">→</span></span>
       </div>
     </a>
@@ -131,7 +229,7 @@
 
   <section class="testimonials" id="testimonials">
     <div class="testimonial">
-      <blockquote>"I clicked through the furniture template and it felt like a real store already. Made it easy to picture my own products in that layout."</blockquote>
+      <blockquote>"I clicked through the pharmacy template and it felt like a real, trustworthy site already. Made it easy to picture my own products in that layout."</blockquote>
       <cite>— Prospective Client, Lagos</cite>
     </div>
     <div class="testimonial">
@@ -139,34 +237,47 @@
       <cite>— Prospective Client, Abuja</cite>
     </div>
     <div class="testimonial">
-      <blockquote>"Five different styles to choose from, all working sites, not just pictures. We picked the grocery layout and asked for a few tweaks."</blockquote>
+      <blockquote>"Seven different styles to choose from, all working sites, not just pictures. We picked the grocery layout and asked for a few tweaks."</blockquote>
       <cite>— Prospective Client, Port Harcourt</cite>
     </div>
   </section>
 
   <section class="newsletter" id="newsletter">
     <h2>Ready to get your own store?</h2>
-    <p>Pick a template that fits your business, or tell us what you have in mind. Leave your email and we'll reach out to discuss pricing and timelines. This is a demo form — nothing is actually sent.</p>
-    <form class="newsletter-form" id="newsletter-form">
-      <input type="email" placeholder="you@example.com" required />
-      <button type="submit">Request a quote</button>
-    </form>
-    <div class="newsletter-note" id="newsletter-note">Thanks — we'll be in touch (demo only, nothing was sent).</div>
+    <p>Pick a template that fits your business, or tell us what you have in mind. Chat with us on WhatsApp or get a full quote on our site — we'll discuss pricing, timelines, and customizations.</p>
+    <div class="newsletter-form" style="gap: 1rem; flex-wrap: wrap;">
+      <a class="cta-btn whatsapp" href="https://wa.me/2348079926755" target="_blank" rel="noopener" style="border-radius: 0;">💬 Chat on WhatsApp</a>
+      <a class="cta-btn primary" href="https://www.justservices.pro" target="_blank" rel="noopener" style="border-radius: 0;">Get a Quote at justservices.pro</a>
+    </div>
+    <div class="share-bar" style="justify-content: center; margin-top: 2rem;">
+      <span class="share-label">Share this page</span>
+      <a href="#" data-share="facebook" class="share-icon" aria-label="Share on Facebook">
+        <svg viewBox="0 0 24 24"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/></svg>
+      </a>
+      <a href="#" data-share="twitter" class="share-icon" aria-label="Share on Twitter">
+        <svg viewBox="0 0 24 24"><path d="M22 5.92c-.74.33-1.53.55-2.36.65a4.1 4.1 0 0 0 1.8-2.27c-.8.47-1.69.81-2.63 1a4.13 4.13 0 0 0-7.04 3.76A11.7 11.7 0 0 1 3.16 4.9a4.13 4.13 0 0 0 1.28 5.51 4.1 4.1 0 0 1-1.87-.51 4.13 4.13 0 0 0 3.31 4.05c-.6.16-1.24.2-1.86.08a4.13 4.13 0 0 0 3.85 2.87A8.3 8.3 0 0 1 2 18.58a11.7 11.7 0 0 0 6.34 1.86c7.6 0 11.76-6.3 11.76-11.76l-.01-.53c.81-.58 1.5-1.31 2.05-2.14-.74.33-1.53.55-2.14.91z"/></svg>
+      </a>
+      <a href="#" data-share="whatsapp" class="share-icon" aria-label="Share on WhatsApp">
+        <svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.6-.8-1.9-.9-.2-.1-.4-.1-.6.1-.2.2-.6.9-.8 1-.1.2-.3.2-.5.1-1.5-.7-2.5-1.3-3.5-2.9-.3-.4 0-.4.3-.7.2-.2.3-.4.5-.6.1-.2.1-.4 0-.6-.1-.2-.6-1.5-.8-2-.2-.5-.4-.4-.6-.4-.5 0-1 .3-1.3.7-.9 1-1 2.4-.1 3.7 1 1.6 2.1 3 4 4 1.9.9 2.5.9 3.4.7.6-.1 1.6-.6 1.9-1.3.3-.6.3-1.2.2-1.3-.1-.2-.2-.3-.2-.6zM12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.6 1.4 5.1L2 22l5-1.4c1.4.8 3.1 1.2 5 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg>
+      </a>
+    </div>
   </section>
 
   <footer class="site-footer">
     <div class="footer-col">
       <div class="footer-brand">Studio Atelier</div>
-      <p>We design and build online stores for Nigerian businesses. The five templates below are live demos — explore them, then get in touch to have one built for you.</p>
+      <p>We design and build online stores for Nigerian businesses. The seven templates below are live demos — explore them, then get in touch to have one built for you.</p>
     </div>
     <div class="footer-col">
       <h4>Templates</h4>
       <ul>
-        <li><a href="fashion/index.html">Worn &amp; Found — Fashion</a></li>
-        <li><a href="electronics/index.html">Circuit &amp; Sound — Electronics</a></li>
         <li><a href="grocery/index.html">Greenleaf Market — Grocery</a></li>
-        <li><a href="books/index.html">Marginalia Books — Books</a></li>
-        <li><a href="furniture/index.html">Hearth &amp; Frame — Furniture</a></li>
+        <li><a href="fashion/index.html">NaijaThreads — Fashion</a></li>
+        <li><a href="electronics/index.html">TechBay — Electronics</a></li>
+        <li><a href="beauty/index.html">GlowHouse — Beauty</a></li>
+        <li><a href="pharmacy/index.html">WellCare — Pharmacy</a></li>
+        <li><a href="b2b/index.html">SupplyHub — B2B</a></li>
+        <li><a href="music/index.html">SoundWave — Music</a></li>
       </ul>
     </div>
     <div class="footer-col">
@@ -174,22 +285,22 @@
       <ul>
         <li><a href="#about">Why preview first</a></li>
         <li><a href="#testimonials">Client feedback</a></li>
-        <li><a href="#newsletter">Request a quote</a></li>
+        <li><a href="#newsletter">Get a quote</a></li>
       </ul>
     </div>
     <div class="footer-col">
-      <h4>Demo Notice</h4>
+      <h4>Get in Touch</h4>
       <ul>
-        <li><a href="#" onclick="return false;">No real payments</a></li>
-        <li><a href="#" onclick="return false;">No data leaves your browser</a></li>
-        <li><a href="#" onclick="return false;">Cart stored locally</a></li>
+        <li><a href="https://wa.me/2348079926755" target="_blank" rel="noopener">WhatsApp: +234 807 992 6755</a></li>
+        <li><a href="https://www.justservices.pro" target="_blank" rel="noopener">justservices.pro</a></li>
+        <li><a href="#" onclick="return false;">No real payments — demo only</a></li>
       </ul>
     </div>
   </footer>
 
   <div class="footer-bottom">
     <span>© Studio Atelier — Lagos, Nigeria</span>
-    <span>Demo templates — for illustration purposes only</span>
+    <span>Demo templates — for illustration purposes only · Prices shown in Naira (₦)</span>
   </div>
 
   <script>
@@ -209,15 +320,7 @@
         shopsDropdown.classList.toggle('open');
       }
     });
-
-    // Newsletter demo submit
-    const form = document.getElementById('newsletter-form');
-    const note = document.getElementById('newsletter-note');
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-      note.classList.add('show');
-      form.reset();
-    });
   </script>
+  <script src="assets/cta.js"></script>
 </body>
 </html>

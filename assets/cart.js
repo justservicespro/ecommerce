@@ -73,7 +73,7 @@
   }
 
   function fmt(num) {
-    return '$' + num.toFixed(2);
+    return '₦' + num.toLocaleString('en-NG', { minimumFractionDigits: 0, maximumFractionDigits: 0 });
   }
 
   function renderCartPage() {

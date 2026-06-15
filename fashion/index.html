@@ -3,90 +3,260 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Worn & Found — Demo Shop</title>
+<title>Naija Threads — Fashion &amp; Apparel Store (Demo)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/shared.css" />
+<link rel="stylesheet" href="../assets/cta.css" />
 <link rel="stylesheet" href="style.css" />
 </head>
 <body data-store="fashion">
+
+  <div class="marquee">
+    <div class="marquee-track">
+      <span>FREE DELIVERY ON ORDERS OVER ₦25,000</span>
+      <span>NEW DROPS WEEKLY</span>
+      <span>NATIONWIDE SHIPPING 🇳🇬</span>
+      <span>FREE DELIVERY ON ORDERS OVER ₦25,000</span>
+      <span>NEW DROPS WEEKLY</span>
+      <span>NATIONWIDE SHIPPING 🇳🇬</span>
+    </div>
+  </div>
+
   <nav class="shop-nav">
-    <a href="../index.html" class="back-link">← All shops</a>
-    <span class="brand">Worn &amp; Found</span>
+    <a href="../index.html" class="back-link">← All templates</a>
+    <span class="brand">Naija<span>Threads</span></span>
+    <ul class="nav-links">
+      <li><a href="#new">New In</a></li>
+      <li><a href="#men">Men</a></li>
+      <li><a href="#women">Women</a></li>
+    </ul>
     <a href="cart.html" class="cart-link">Cart (<span class="cart-count">0</span>)</a>
   </nav>
 
   <header class="hero">
-    <h1>Built to be lived in</h1>
-    <p>Honest materials, relaxed cuts, and pieces that get better with wear. New arrivals every Tuesday.</p>
+    <div class="hero-inner">
+      <span class="eyebrow">🔥 New Collection</span>
+      <h1>Street style, <em>made local</em></h1>
+      <p>Local fashion brands, nationwide delivery. Shop the latest drops in streetwear, native wear, and everyday essentials — all in one place.</p>
+    </div>
   </header>
 
+  <div class="category-bar">
+    <span class="category-chip active">All</span>
+    <span class="category-chip">New In</span>
+    <span class="category-chip">Men</span>
+    <span class="category-chip">Women</span>
+    <span class="category-chip">Footwear</span>
+    <span class="category-chip">Accessories</span>
+    <span class="category-chip">Native Wear</span>
+  </div>
+
+  <div class="section-head" id="new">
+    <h2>New In</h2>
+    <span class="section-note">This Week's Drops</span>
+  </div>
   <main class="product-grid">
     <div class="product-card">
-      <div class="product-image" style="background-image:url('https://images.unsplash.com/photo-1551028719-00167b16eac5?w=500&q=80')">
-        <span class="product-tag">New</span>
-      </div>
-      <div class="product-name">Washed Denim Jacket</div>
-      <div class="product-meta">Indigo · Unisex</div>
-      <div class="product-price">$118.00</div>
+      <span class="product-tag">New</span>
+      <div class="product-image" style="background-image:url('https://images.unsplash.com/photo-1556905055-8f358a7a47b2?w=400&q=80')"></div>
+      <div class="product-name">Oversized Graphic Tee</div>
+      <div class="product-meta">100% cotton · Unisex</div>
+      <div class="product-price">₦12,500</div>
       <button class="add-btn" data-add-to-cart
-        data-id="f1" data-name="Washed Denim Jacket" data-price="118.00"
-        data-image="https://images.unsplash.com/photo-1551028719-00167b16eac5?w=200&q=80">Add to cart</button>
+        data-id="f1" data-name="Oversized Graphic Tee" data-price="12500"
+        data-image="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?w=200&q=80">Add to Cart</button>
     </div>
 
     <div class="product-card">
-      <div class="product-image" style="background-image:url('https://images.unsplash.com/photo-1556905055-8f358a7a47b2?w=500&q=80')"></div>
-      <div class="product-name">Heavyweight Tee, Sand</div>
-      <div class="product-meta">100% cotton</div>
-      <div class="product-price">$38.00</div>
+      <span class="product-tag">New</span>
+      <div class="product-image" style="background-image:url('https://images.unsplash.com/photo-1542272604-787c3835535d?w=400&q=80')"></div>
+      <div class="product-name">Cargo Utility Pants</div>
+      <div class="product-meta">Khaki · Relaxed fit</div>
+      <div class="product-price">₦24,000</div>
       <button class="add-btn" data-add-to-cart
-        data-id="f2" data-name="Heavyweight Tee, Sand" data-price="38.00"
-        data-image="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?w=200&q=80">Add to cart</button>
+        data-id="f2" data-name="Cargo Utility Pants" data-price="24000"
+        data-image="https://images.unsplash.com/photo-1542272604-787c3835535d?w=200&q=80">Add to Cart</button>
     </div>
 
     <div class="product-card">
-      <div class="product-image" style="background-image:url('https://images.unsplash.com/photo-1473966968600-fa801b869a1a?w=500&q=80')">
-        <span class="product-tag">Limited</span>
-      </div>
-      <div class="product-name">Wool Overcoat</div>
-      <div class="product-meta">Charcoal · Tailored</div>
-      <div class="product-price">$245.00</div>
+      <div class="product-image" style="background-image:url('https://images.unsplash.com/photo-1551028719-00167b16eac5?w=400&q=80')"></div>
+      <div class="product-name">Denim Jacket</div>
+      <div class="product-meta">Washed indigo</div>
+      <div class="product-price">₦32,000</div>
       <button class="add-btn" data-add-to-cart
-        data-id="f3" data-name="Wool Overcoat" data-price="245.00"
-        data-image="https://images.unsplash.com/photo-1473966968600-fa801b869a1a?w=200&q=80">Add to cart</button>
+        data-id="f3" data-name="Denim Jacket" data-price="32000"
+        data-image="https://images.unsplash.com/photo-1551028719-00167b16eac5?w=200&q=80">Add to Cart</button>
     </div>
 
     <div class="product-card">
-      <div class="product-image" style="background-image:url('https://images.unsplash.com/photo-1542272604-787c3835535d?w=500&q=80')"></div>
-      <div class="product-name">Straight Leg Trousers</div>
-      <div class="product-meta">Olive · Mid-rise</div>
-      <div class="product-price">$84.00</div>
-      <button class="add-btn" data-add-to-cart
-        data-id="f4" data-name="Straight Leg Trousers" data-price="84.00"
-        data-image="https://images.unsplash.com/photo-1542272604-787c3835535d?w=200&q=80">Add to cart</button>
-    </div>
-
-    <div class="product-card">
-      <div class="product-image" style="background-image:url('https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=500&q=80')"></div>
-      <div class="product-name">Ribbed Knit Sweater</div>
-      <div class="product-meta">Cream · Wool blend</div>
-      <div class="product-price">$92.00</div>
-      <button class="add-btn" data-add-to-cart
-        data-id="f5" data-name="Ribbed Knit Sweater" data-price="92.00"
-        data-image="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=200&q=80">Add to cart</button>
-    </div>
-
-    <div class="product-card">
-      <div class="product-image" style="background-image:url('https://images.unsplash.com/photo-1542838132-92c53300491e?w=500&q=80')">
-        <span class="product-tag">New</span>
-      </div>
-      <div class="product-name">Canvas Tote Bag</div>
+      <span class="product-tag">Hot</span>
+      <div class="product-image" style="background-image:url('https://images.unsplash.com/photo-1542838132-92c53300491e?w=400&q=80')"></div>
+      <div class="product-name">Canvas Crossbody Bag</div>
       <div class="product-meta">Natural · Large</div>
-      <div class="product-price">$28.00</div>
+      <div class="product-price">₦9,800</div>
       <button class="add-btn" data-add-to-cart
-        data-id="f6" data-name="Canvas Tote Bag" data-price="28.00"
-        data-image="https://images.unsplash.com/photo-1542838132-92c53300491e?w=200&q=80">Add to cart</button>
+        data-id="f4" data-name="Canvas Crossbody Bag" data-price="9800"
+        data-image="https://images.unsplash.com/photo-1542838132-92c53300491e?w=200&q=80">Add to Cart</button>
     </div>
   </main>
 
+  <div class="section-head" id="men">
+    <h2>Men</h2>
+    <span class="section-note">Everyday Essentials</span>
+  </div>
+  <main class="product-grid">
+    <div class="product-card">
+      <div class="product-image" style="background-image:url('https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=400&q=80')"></div>
+      <div class="product-name">Classic Polo Shirt</div>
+      <div class="product-meta">Pique cotton · Navy</div>
+      <div class="product-price">₦14,000</div>
+      <button class="add-btn" data-add-to-cart
+        data-id="f5" data-name="Classic Polo Shirt" data-price="14000"
+        data-image="https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=200&q=80">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <div class="product-image" style="background-image:url('https://images.unsplash.com/photo-1542175684-c1f5d8ed9b56?w=400&q=80')"></div>
+      <div class="product-name">Leather Sneakers</div>
+      <div class="product-meta">White · True to size</div>
+      <div class="product-price">₦38,500</div>
+      <button class="add-btn" data-add-to-cart
+        data-id="f6" data-name="Leather Sneakers" data-price="38500"
+        data-image="https://images.unsplash.com/photo-1542175684-c1f5d8ed9b56?w=200&q=80">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <div class="product-image" style="background-image:url('https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=400&q=80')"></div>
+      <div class="product-name">Ankara Print Shirt</div>
+      <div class="product-meta">Short sleeve · Cotton blend</div>
+      <div class="product-price">₦18,500</div>
+      <button class="add-btn" data-add-to-cart
+        data-id="f7" data-name="Ankara Print Shirt" data-price="18500"
+        data-image="https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=200&q=80">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <div class="product-image" style="background-image:url('https://images.unsplash.com/photo-1611312449408-fcece27cdbb7?w=400&q=80')"></div>
+      <div class="product-name">Leather Belt</div>
+      <div class="product-meta">Brown · Adjustable</div>
+      <div class="product-price">₦7,500</div>
+      <button class="add-btn" data-add-to-cart
+        data-id="f8" data-name="Leather Belt" data-price="7500"
+        data-image="https://images.unsplash.com/photo-1611312449408-fcece27cdbb7?w=200&q=80">Add to Cart</button>
+    </div>
+  </main>
+
+  <div class="section-head" id="women">
+    <h2>Women</h2>
+    <span class="section-note">Trending Now</span>
+  </div>
+  <main class="product-grid">
+    <div class="product-card">
+      <span class="product-tag">Hot</span>
+      <div class="product-image" style="background-image:url('https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=400&q=80')"></div>
+      <div class="product-name">Wrap Midi Dress</div>
+      <div class="product-meta">Floral print</div>
+      <div class="product-price">₦22,000</div>
+      <button class="add-btn" data-add-to-cart
+        data-id="f9" data-name="Wrap Midi Dress" data-price="22000"
+        data-image="https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=200&q=80">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <div class="product-image" style="background-image:url('https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=400&q=80')"></div>
+      <div class="product-name">High-Waist Jeans</div>
+      <div class="product-meta">Stretch denim</div>
+      <div class="product-price">₦19,500</div>
+      <button class="add-btn" data-add-to-cart
+        data-id="f10" data-name="High-Waist Jeans" data-price="19500"
+        data-image="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=200&q=80">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <div class="product-image" style="background-image:url('https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=400&q=80')"></div>
+      <div class="product-name">Strap Heeled Sandals</div>
+      <div class="product-meta">Tan · Block heel</div>
+      <div class="product-price">₦27,000</div>
+      <button class="add-btn" data-add-to-cart
+        data-id="f11" data-name="Strap Heeled Sandals" data-price="27000"
+        data-image="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=200&q=80">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <div class="product-image" style="background-image:url('https://images.unsplash.com/photo-1591561954557-26941169b49e?w=400&q=80')"></div>
+      <div class="product-name">Gold Hoop Earrings</div>
+      <div class="product-meta">Stainless steel</div>
+      <div class="product-price">₦6,200</div>
+      <button class="add-btn" data-add-to-cart
+        data-id="f12" data-name="Gold Hoop Earrings" data-price="6200"
+        data-image="https://images.unsplash.com/photo-1591561954557-26941169b49e?w=200&q=80">Add to Cart</button>
+    </div>
+  </main>
+
+  <div class="cta-bar">
+    <div class="cta-bar-text">
+      <strong>Want a fashion store like this?</strong>
+      <span>This is a live demo built by Studio Atelier. We can build and launch a store like this for your brand.</span>
+    </div>
+    <div class="cta-bar-actions">
+      <div class="share-bar">
+        <span class="share-label">Share</span>
+        <a href="#" data-share="facebook" class="share-icon" aria-label="Share on Facebook">
+          <svg viewBox="0 0 24 24"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/></svg>
+        </a>
+        <a href="#" data-share="twitter" class="share-icon" aria-label="Share on Twitter">
+          <svg viewBox="0 0 24 24"><path d="M22 5.92c-.74.33-1.53.55-2.36.65a4.1 4.1 0 0 0 1.8-2.27c-.8.47-1.69.81-2.63 1a4.13 4.13 0 0 0-7.04 3.76A11.7 11.7 0 0 1 3.16 4.9a4.13 4.13 0 0 0 1.28 5.51 4.1 4.1 0 0 1-1.87-.51 4.13 4.13 0 0 0 3.31 4.05c-.6.16-1.24.2-1.86.08a4.13 4.13 0 0 0 3.85 2.87A8.3 8.3 0 0 1 2 18.58a11.7 11.7 0 0 0 6.34 1.86c7.6 0 11.76-6.3 11.76-11.76l-.01-.53c.81-.58 1.5-1.31 2.05-2.14-.74.33-1.53.55-2.14.91z"/></svg>
+        </a>
+        <a href="#" data-share="whatsapp" class="share-icon" aria-label="Share on WhatsApp">
+          <svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.6-.8-1.9-.9-.2-.1-.4-.1-.6.1-.2.2-.6.9-.8 1-.1.2-.3.2-.5.1-1.5-.7-2.5-1.3-3.5-2.9-.3-.4 0-.4.3-.7.2-.2.3-.4.5-.6.1-.2.1-.4 0-.6-.1-.2-.6-1.5-.8-2-.2-.5-.4-.4-.6-.4-.5 0-1 .3-1.3.7-.9 1-1 2.4-.1 3.7 1 1.6 2.1 3 4 4 1.9.9 2.5.9 3.4.7.6-.1 1.6-.6 1.9-1.3.3-.6.3-1.2.2-1.3-.1-.2-.2-.3-.2-.6zM12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.6 1.4 5.1L2 22l5-1.4c1.4.8 3.1 1.2 5 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg>
+        </a>
+      </div>
+      <a class="cta-btn whatsapp" href="https://wa.me/2348079926755" target="_blank" rel="noopener">💬 Chat on WhatsApp</a>
+      <a class="cta-btn primary" href="https://www.justservices.pro" target="_blank" rel="noopener">Get a Store Like This</a>
+    </div>
+  </div>
+
+  <footer class="shop-footer">
+    <div class="footer-grid">
+      <div class="footer-brand-col">
+        <span class="brand">Naija<span>Threads</span></span>
+        <p>A demo fashion &amp; apparel storefront built by Studio Atelier — showing what an online clothing brand with nationwide delivery could look like.</p>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="#new">New In</a></li>
+          <li><a href="#men">Men</a></li>
+          <li><a href="#women">Women</a></li>
+          <li><a href="cart.html">My Cart</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Delivery</h4>
+        <ul>
+          <li>Lagos — 1–2 days</li>
+          <li>Abuja — 2–3 days</li>
+          <li>Nationwide — 3–5 days</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Studio Atelier</h4>
+        <ul>
+          <li><a href="../index.html">All templates</a></li>
+          <li><a href="https://www.justservices.pro" target="_blank" rel="noopener">Get a quote</a></li>
+          <li><a href="https://wa.me/2348079926755" target="_blank" rel="noopener">WhatsApp us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© NaijaThreads — Demo Store</span>
+      <span>Built by Studio Atelier · Prices in Naira (₦) · For demo purposes only</span>
+    </div>
+  </footer>
+
   <script src="../assets/cart.js"></script>
+  <script src="../assets/cta.js"></script>
 </body>
 </html>

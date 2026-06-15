@@ -3,37 +3,48 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Cart — Circuit & Sound</title>
+<title>Cart — TechBay (Demo)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/shared.css" />
+<link rel="stylesheet" href="../assets/cta.css" />
 <link rel="stylesheet" href="style.css" />
 </head>
 <body data-store="electronics">
+
+  <div class="utility-bar">
+    <span>📦 Pay on delivery available in Lagos &amp; Abuja</span>
+    <span>Demo store — Studio Atelier Template 03</span>
+  </div>
+
   <nav class="shop-nav">
     <a href="index.html" class="back-link">← Continue shopping</a>
-    <span class="brand">Circuit &amp; Sound</span>
-    <a href="cart.html" class="cart-link">Cart (<span class="cart-count">0</span>)</a>
+    <span class="brand">Tech<span>Bay</span></span>
+    <div class="nav-search">Search for phones, laptops, accessories...</div>
+    <a href="cart.html" class="cart-link">🛒 Cart (<span class="cart-count">0</span>)</a>
   </nav>
 
   <main class="cart-page">
-    <h1>// Cart</h1>
+    <h1>Your Cart</h1>
 
-    <div id="cart-empty">Cart is empty. <a href="index.html">Browse products →</a></div>
+    <div id="cart-empty">Your cart is empty. <a href="index.html">Start shopping →</a></div>
     <div id="cart-items"></div>
 
     <div class="cart-summary">
       <span>Total</span>
-      <span id="cart-total">$0.00</span>
+      <span id="cart-total">₦0</span>
     </div>
 
     <form id="checkout-form" class="checkout-form">
       <label>Full name
-        <input type="text" required placeholder="Jordan Smith" />
+        <input type="text" required placeholder="e.g. Ifeanyi Obi" />
       </label>
-      <label>Email
-        <input type="email" required placeholder="you@example.com" />
+      <label>Phone number
+        <input type="tel" required placeholder="080X XXX XXXX" />
       </label>
-      <label>Shipping address
-        <input type="text" required placeholder="123 Market Street, City" />
+      <label>Delivery address
+        <input type="text" required placeholder="House no., street, area, city" />
       </label>
       <div class="checkout-row">
         <label>Card number
@@ -43,23 +54,24 @@
           <input type="text" required placeholder="MM/YY" />
         </label>
       </div>
-      <button type="submit" id="checkout-btn" class="add-btn" style="margin-top:0.5rem;">Place order</button>
+      <button type="submit" id="checkout-btn" class="add-btn" style="margin-top:0.5rem; align-self: flex-start; padding: 0.85rem 2rem;">Place Order</button>
     </form>
   </main>
 
   <div class="modal-overlay" id="order-modal">
     <div class="modal-box">
       <svg class="check-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="12" cy="12" r="11" stroke="#5fd0c5" stroke-width="2"/>
-        <path d="M7 12.5L10.5 16L17 8.5" stroke="#5fd0c5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="12" cy="12" r="11" stroke="#1d4ed8" stroke-width="2"/>
+        <path d="M7 12.5L10.5 16L17 8.5" stroke="#1d4ed8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
       </svg>
-      <h2>Order placed</h2>
+      <h2>Order placed!</h2>
       <p>Confirmation <span class="order-number"></span></p>
-      <p style="font-size:0.85rem;">This is a demo — no payment was processed.</p>
+      <p style="font-size:0.85rem;">This is a demo — no payment was processed and no order will be delivered.</p>
       <button class="modal-close">Back to shop</button>
     </div>
   </div>
 
   <script src="../assets/cart.js"></script>
+  <script src="../assets/cta.js"></script>
 </body>
 </html>

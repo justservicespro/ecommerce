@@ -3,86 +3,274 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Circuit & Sound — Demo Shop</title>
+<title>TechBay — Electronics &amp; Mobile Devices Store (Demo)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/shared.css" />
+<link rel="stylesheet" href="../assets/cta.css" />
 <link rel="stylesheet" href="style.css" />
 </head>
 <body data-store="electronics">
+
+  <div class="utility-bar">
+    <span>📦 Pay on delivery available in Lagos &amp; Abuja</span>
+    <span>Demo store — Studio Atelier Template 03</span>
+  </div>
+
   <nav class="shop-nav">
-    <a href="../index.html" class="back-link">← All shops</a>
-    <span class="brand">Circuit &amp; Sound</span>
-    <a href="cart.html" class="cart-link">Cart (<span class="cart-count">0</span>)</a>
+    <a href="../index.html" class="back-link">← All templates</a>
+    <span class="brand">Tech<span>Bay</span></span>
+    <div class="nav-search">Search for phones, laptops, accessories...</div>
+    <a href="cart.html" class="cart-link">🛒 Cart (<span class="cart-count">0</span>)</a>
   </nav>
 
   <header class="hero">
-    <div class="hero-inner">
-      <h1>Specs you can trust</h1>
-      <p>// Audio gear, wearables, and home tech. Every listing includes the numbers that matter.</p>
+    <div class="hero-content">
+      <span class="eyebrow">⚡ Verified sellers · 7-day return</span>
+      <h1>Phones, laptops &amp; gadgets — at honest prices</h1>
+      <p>Compare specs, read the numbers that matter, and order with confidence. Nationwide delivery with pay-on-delivery in major cities.</p>
+      <div class="spec-badges">
+        <span class="badge">🔐 1yr warranty on phones</span>
+        <span class="badge">🚚 Free delivery in Lagos</span>
+        <span class="badge">↩ 7-day returns</span>
+      </div>
     </div>
+    <div class="hero-image" style="background-image:url('https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=700&q=80')"></div>
   </header>
 
+  <div class="category-strip">
+    <div class="category-pill"><span class="icon">📱</span> Phones</div>
+    <div class="category-pill"><span class="icon">💻</span> Laptops</div>
+    <div class="category-pill"><span class="icon">🎧</span> Audio</div>
+    <div class="category-pill"><span class="icon">⌚</span> Wearables</div>
+    <div class="category-pill"><span class="icon">🔌</span> Accessories</div>
+    <div class="category-pill"><span class="icon">📺</span> Home Tech</div>
+    <div class="category-pill"><span class="icon">🎮</span> Gaming</div>
+  </div>
+
+  <div class="section-head">
+    <h2>Smartphones</h2>
+    <span class="section-note">Top sellers this month</span>
+  </div>
   <main class="product-grid">
     <div class="product-card">
-      <div class="product-image" style="background-image:url('https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&q=80')"></div>
-      <div class="product-name">Over-Ear ANC Headphones</div>
-      <div class="product-meta">40h battery · Bluetooth 5.3 · 250g</div>
-      <div class="product-price">$179.00</div>
-      <button class="add-btn" data-add-to-cart
-        data-id="e1" data-name="Over-Ear ANC Headphones" data-price="179.00"
-        data-image="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=200&q=80">Add to cart</button>
+      <div class="product-image" style="background-image:url('https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=400&q=80')">
+        <span class="product-tag">Bestseller</span>
+      </div>
+      <div class="product-body">
+        <div class="product-name">Galaxy A55 5G</div>
+        <div class="product-specs">128GB · 8GB RAM · 50MP camera</div>
+        <div class="product-price">₦385,000</div>
+        <button class="add-btn" data-add-to-cart
+          data-id="e1" data-name="Galaxy A55 5G (128GB)" data-price="385000"
+          data-image="https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=200&q=80">Add to Cart</button>
+      </div>
     </div>
 
     <div class="product-card">
-      <div class="product-image" style="background-image:url('https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&q=80')"></div>
-      <div class="product-name">Smart Watch, Series 4</div>
-      <div class="product-meta">AMOLED · GPS · 5ATM</div>
-      <div class="product-price">$229.00</div>
-      <button class="add-btn" data-add-to-cart
-        data-id="e2" data-name="Smart Watch, Series 4" data-price="229.00"
-        data-image="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=200&q=80">Add to cart</button>
+      <div class="product-image" style="background-image:url('https://images.unsplash.com/photo-1592286927505-1def25115481?w=400&q=80')"></div>
+      <div class="product-body">
+        <div class="product-name">iPhone 13 (Refurbished)</div>
+        <div class="product-specs">128GB · A15 Bionic · UK Used</div>
+        <div class="product-price">₦620,000</div>
+        <button class="add-btn" data-add-to-cart
+          data-id="e2" data-name="iPhone 13 128GB (Refurbished)" data-price="620000"
+          data-image="https://images.unsplash.com/photo-1592286927505-1def25115481?w=200&q=80">Add to Cart</button>
+      </div>
     </div>
 
     <div class="product-card">
-      <div class="product-image" style="background-image:url('https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=500&q=80')"></div>
-      <div class="product-name">Mechanical Keyboard 75%</div>
-      <div class="product-meta">Hot-swap · USB-C · RGB</div>
-      <div class="product-price">$129.00</div>
-      <button class="add-btn" data-add-to-cart
-        data-id="e3" data-name="Mechanical Keyboard 75%" data-price="129.00"
-        data-image="https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=200&q=80">Add to cart</button>
+      <div class="product-image" style="background-image:url('https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=400&q=80')"></div>
+      <div class="product-body">
+        <div class="product-name">Tecno Spark 20</div>
+        <div class="product-specs">256GB · 8GB RAM · 108MP camera</div>
+        <div class="product-price">₦195,000</div>
+        <button class="add-btn" data-add-to-cart
+          data-id="e3" data-name="Tecno Spark 20 (256GB)" data-price="195000"
+          data-image="https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=200&q=80">Add to Cart</button>
+      </div>
     </div>
 
     <div class="product-card">
-      <div class="product-image" style="background-image:url('https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?w=500&q=80')"></div>
-      <div class="product-name">Portable Bluetooth Speaker</div>
-      <div class="product-meta">IPX7 · 18h playback</div>
-      <div class="product-price">$59.00</div>
-      <button class="add-btn" data-add-to-cart
-        data-id="e4" data-name="Portable Bluetooth Speaker" data-price="59.00"
-        data-image="https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?w=200&q=80">Add to cart</button>
-    </div>
-
-    <div class="product-card">
-      <div class="product-image" style="background-image:url('https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=500&q=80')"></div>
-      <div class="product-name">27" 4K Monitor</div>
-      <div class="product-meta">144Hz · HDR10 · USB-C 90W</div>
-      <div class="product-price">$399.00</div>
-      <button class="add-btn" data-add-to-cart
-        data-id="e5" data-name="27&quot; 4K Monitor" data-price="399.00"
-        data-image="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=200&q=80">Add to cart</button>
-    </div>
-
-    <div class="product-card">
-      <div class="product-image" style="background-image:url('https://images.unsplash.com/photo-1583394838336-acd977736f90?w=500&q=80')"></div>
-      <div class="product-name">Wireless Charging Pad</div>
-      <div class="product-meta">15W · Qi · Anti-slip</div>
-      <div class="product-price">$24.00</div>
-      <button class="add-btn" data-add-to-cart
-        data-id="e6" data-name="Wireless Charging Pad" data-price="24.00"
-        data-image="https://images.unsplash.com/photo-1583394838336-acd977736f90?w=200&q=80">Add to cart</button>
+      <div class="product-image" style="background-image:url('https://images.unsplash.com/photo-1565849904461-04a58ad377e0?w=400&q=80')"></div>
+      <div class="product-body">
+        <div class="product-name">Infinix Note 30</div>
+        <div class="product-specs">256GB · 8GB RAM · 108MP camera</div>
+        <div class="product-price">₦215,000</div>
+        <button class="add-btn" data-add-to-cart
+          data-id="e4" data-name="Infinix Note 30 (256GB)" data-price="215000"
+          data-image="https://images.unsplash.com/photo-1565849904461-04a58ad377e0?w=200&q=80">Add to Cart</button>
+      </div>
     </div>
   </main>
 
+  <div class="section-head">
+    <h2>Laptops &amp; Accessories</h2>
+    <span class="section-note">Work, school &amp; gaming</span>
+  </div>
+  <main class="product-grid">
+    <div class="product-card">
+      <div class="product-image" style="background-image:url('https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=400&q=80')">
+        <span class="product-tag">Bestseller</span>
+      </div>
+      <div class="product-body">
+        <div class="product-name">HP ProBook 450 G8</div>
+        <div class="product-specs">Core i5 · 8GB RAM · 256GB SSD</div>
+        <div class="product-price">₦540,000</div>
+        <button class="add-btn" data-add-to-cart
+          data-id="e5" data-name="HP ProBook 450 G8" data-price="540000"
+          data-image="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=200&q=80">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-image" style="background-image:url('https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=400&q=80')"></div>
+      <div class="product-body">
+        <div class="product-name">Lenovo IdeaPad Slim 3</div>
+        <div class="product-specs">Ryzen 5 · 8GB RAM · 512GB SSD</div>
+        <div class="product-price">₦485,000</div>
+        <button class="add-btn" data-add-to-cart
+          data-id="e6" data-name="Lenovo IdeaPad Slim 3" data-price="485000"
+          data-image="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=200&q=80">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-image" style="background-image:url('https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&q=80')"></div>
+      <div class="product-body">
+        <div class="product-name">Wireless ANC Headphones</div>
+        <div class="product-specs">40hr battery · Bluetooth 5.3</div>
+        <div class="product-price">₦42,000</div>
+        <button class="add-btn" data-add-to-cart
+          data-id="e7" data-name="Wireless ANC Headphones" data-price="42000"
+          data-image="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=200&q=80">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-image" style="background-image:url('https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&q=80')"></div>
+      <div class="product-body">
+        <div class="product-name">Smart Watch Pro</div>
+        <div class="product-specs">AMOLED · Heart rate · IP68</div>
+        <div class="product-price">₦35,000</div>
+        <button class="add-btn" data-add-to-cart
+          data-id="e8" data-name="Smart Watch Pro" data-price="35000"
+          data-image="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=200&q=80">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-image" style="background-image:url('https://images.unsplash.com/photo-1583394838336-acd977736f90?w=400&q=80')"></div>
+      <div class="product-body">
+        <div class="product-name">20W Fast Charger + Cable</div>
+        <div class="product-specs">USB-C PD · Type-C cable incl.</div>
+        <div class="product-price">₦8,500</div>
+        <button class="add-btn" data-add-to-cart
+          data-id="e9" data-name="20W Fast Charger + Cable" data-price="8500"
+          data-image="https://images.unsplash.com/photo-1583394838336-acd977736f90?w=200&q=80">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-image" style="background-image:url('https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=400&q=80')"></div>
+      <div class="product-body">
+        <div class="product-name">Mechanical Keyboard</div>
+        <div class="product-specs">75% layout · Hot-swap · RGB</div>
+        <div class="product-price">₦55,000</div>
+        <button class="add-btn" data-add-to-cart
+          data-id="e10" data-name="Mechanical Keyboard 75%" data-price="55000"
+          data-image="https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=200&q=80">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-image" style="background-image:url('https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?w=400&q=80')"></div>
+      <div class="product-body">
+        <div class="product-name">Portable Bluetooth Speaker</div>
+        <div class="product-specs">IPX7 · 18hr playback</div>
+        <div class="product-price">₦24,500</div>
+        <button class="add-btn" data-add-to-cart
+          data-id="e11" data-name="Portable Bluetooth Speaker" data-price="24500"
+          data-image="https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?w=200&q=80">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-image" style="background-image:url('https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=400&q=80')"></div>
+      <div class="product-body">
+        <div class="product-name">24" Full HD Monitor</div>
+        <div class="product-specs">75Hz · HDMI + VGA</div>
+        <div class="product-price">₦128,000</div>
+        <button class="add-btn" data-add-to-cart
+          data-id="e12" data-name="24-inch Full HD Monitor" data-price="128000"
+          data-image="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=200&q=80">Add to Cart</button>
+      </div>
+    </div>
+  </main>
+
+  <div class="cta-bar">
+    <div class="cta-bar-text">
+      <strong>Want an electronics store like this?</strong>
+      <span>This is a live demo built by Studio Atelier. We can build and launch a store like this for your business.</span>
+    </div>
+    <div class="cta-bar-actions">
+      <div class="share-bar">
+        <span class="share-label">Share</span>
+        <a href="#" data-share="facebook" class="share-icon" aria-label="Share on Facebook">
+          <svg viewBox="0 0 24 24"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/></svg>
+        </a>
+        <a href="#" data-share="twitter" class="share-icon" aria-label="Share on Twitter">
+          <svg viewBox="0 0 24 24"><path d="M22 5.92c-.74.33-1.53.55-2.36.65a4.1 4.1 0 0 0 1.8-2.27c-.8.47-1.69.81-2.63 1a4.13 4.13 0 0 0-7.04 3.76A11.7 11.7 0 0 1 3.16 4.9a4.13 4.13 0 0 0 1.28 5.51 4.1 4.1 0 0 1-1.87-.51 4.13 4.13 0 0 0 3.31 4.05c-.6.16-1.24.2-1.86.08a4.13 4.13 0 0 0 3.85 2.87A8.3 8.3 0 0 1 2 18.58a11.7 11.7 0 0 0 6.34 1.86c7.6 0 11.76-6.3 11.76-11.76l-.01-.53c.81-.58 1.5-1.31 2.05-2.14-.74.33-1.53.55-2.14.91z"/></svg>
+        </a>
+        <a href="#" data-share="whatsapp" class="share-icon" aria-label="Share on WhatsApp">
+          <svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.6-.8-1.9-.9-.2-.1-.4-.1-.6.1-.2.2-.6.9-.8 1-.1.2-.3.2-.5.1-1.5-.7-2.5-1.3-3.5-2.9-.3-.4 0-.4.3-.7.2-.2.3-.4.5-.6.1-.2.1-.4 0-.6-.1-.2-.6-1.5-.8-2-.2-.5-.4-.4-.6-.4-.5 0-1 .3-1.3.7-.9 1-1 2.4-.1 3.7 1 1.6 2.1 3 4 4 1.9.9 2.5.9 3.4.7.6-.1 1.6-.6 1.9-1.3.3-.6.3-1.2.2-1.3-.1-.2-.2-.3-.2-.6zM12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.6 1.4 5.1L2 22l5-1.4c1.4.8 3.1 1.2 5 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg>
+        </a>
+      </div>
+      <a class="cta-btn whatsapp" href="https://wa.me/2348079926755" target="_blank" rel="noopener">💬 Chat on WhatsApp</a>
+      <a class="cta-btn primary" href="https://www.justservices.pro" target="_blank" rel="noopener">Get a Store Like This</a>
+    </div>
+  </div>
+
+  <footer class="shop-footer">
+    <div class="footer-grid">
+      <div class="footer-brand-col">
+        <div class="footer-brand">TechBay</div>
+        <p>A demo electronics &amp; mobile devices storefront built by Studio Atelier — showing what an online gadget store with verified sellers could look like.</p>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="#">Smartphones</a></li>
+          <li><a href="#">Laptops</a></li>
+          <li><a href="#">Accessories</a></li>
+          <li><a href="cart.html">My Cart</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <ul>
+          <li>7-day return policy</li>
+          <li>1yr warranty on phones</li>
+          <li>Pay on delivery — Lagos &amp; Abuja</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Studio Atelier</h4>
+        <ul>
+          <li><a href="../index.html">All templates</a></li>
+          <li><a href="https://www.justservices.pro" target="_blank" rel="noopener">Get a quote</a></li>
+          <li><a href="https://wa.me/2348079926755" target="_blank" rel="noopener">WhatsApp us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© TechBay — Demo Store</span>
+      <span>Built by Studio Atelier · Prices in Naira (₦) · For demo purposes only</span>
+    </div>
+  </footer>
+
   <script src="../assets/cart.js"></script>
+  <script src="../assets/cta.js"></script>
 </body>
 </html>

@@ -3,37 +3,58 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Cart — Worn & Found</title>
+<title>Cart — NaijaThreads (Demo)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/shared.css" />
+<link rel="stylesheet" href="../assets/cta.css" />
 <link rel="stylesheet" href="style.css" />
 </head>
 <body data-store="fashion">
+
+  <div class="marquee">
+    <div class="marquee-track">
+      <span>FREE DELIVERY ON ORDERS OVER ₦25,000</span>
+      <span>NEW DROPS WEEKLY</span>
+      <span>NATIONWIDE SHIPPING 🇳🇬</span>
+      <span>FREE DELIVERY ON ORDERS OVER ₦25,000</span>
+      <span>NEW DROPS WEEKLY</span>
+      <span>NATIONWIDE SHIPPING 🇳🇬</span>
+    </div>
+  </div>
+
   <nav class="shop-nav">
     <a href="index.html" class="back-link">← Continue shopping</a>
-    <span class="brand">Worn &amp; Found</span>
+    <span class="brand">Naija<span>Threads</span></span>
+    <ul class="nav-links">
+      <li><a href="index.html#new">New In</a></li>
+      <li><a href="index.html#men">Men</a></li>
+      <li><a href="index.html#women">Women</a></li>
+    </ul>
     <a href="cart.html" class="cart-link">Cart (<span class="cart-count">0</span>)</a>
   </nav>
 
   <main class="cart-page">
-    <h1>Your bag</h1>
+    <h1>Your Cart</h1>
 
-    <div id="cart-empty">Your bag is empty. <a href="index.html">Browse the collection →</a></div>
+    <div id="cart-empty">Your cart is empty. <a href="index.html">Start shopping →</a></div>
     <div id="cart-items"></div>
 
     <div class="cart-summary">
       <span>Total</span>
-      <span id="cart-total">$0.00</span>
+      <span id="cart-total">₦0</span>
     </div>
 
     <form id="checkout-form" class="checkout-form">
       <label>Full name
-        <input type="text" required placeholder="Jordan Smith" />
+        <input type="text" required placeholder="e.g. Tunde Bakare" />
       </label>
-      <label>Email
-        <input type="email" required placeholder="you@example.com" />
+      <label>Phone number
+        <input type="tel" required placeholder="080X XXX XXXX" />
       </label>
-      <label>Shipping address
-        <input type="text" required placeholder="123 Market Street, City" />
+      <label>Delivery address
+        <input type="text" required placeholder="House no., street, area, city" />
       </label>
       <div class="checkout-row">
         <label>Card number
@@ -43,23 +64,24 @@
           <input type="text" required placeholder="MM/YY" />
         </label>
       </div>
-      <button type="submit" id="checkout-btn" class="add-btn" style="margin-top:0.5rem;">Place order</button>
+      <button type="submit" id="checkout-btn" class="add-btn" style="margin-top:0.5rem;">Place Order</button>
     </form>
   </main>
 
   <div class="modal-overlay" id="order-modal">
     <div class="modal-box">
       <svg class="check-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="12" cy="12" r="11" stroke="#b5495b" stroke-width="2"/>
-        <path d="M7 12.5L10.5 16L17 8.5" stroke="#b5495b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="12" cy="12" r="11" stroke="#ff5c39" stroke-width="2"/>
+        <path d="M7 12.5L10.5 16L17 8.5" stroke="#ff5c39" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
       </svg>
-      <h2>Order placed</h2>
+      <h2>Order placed!</h2>
       <p>Confirmation <span class="order-number"></span></p>
-      <p style="font-size:0.85rem;color:#8a7d6f;">This is a demo — no payment was processed.</p>
+      <p style="font-size:0.85rem;">This is a demo — no payment was processed and no order will be shipped.</p>
       <button class="modal-close">Back to shop</button>
     </div>
   </div>
 
   <script src="../assets/cart.js"></script>
+  <script src="../assets/cta.js"></script>
 </body>
 </html>
